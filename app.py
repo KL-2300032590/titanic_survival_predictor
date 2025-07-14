@@ -13,7 +13,7 @@ sibsp = st.slider("Number of Siblings/Spoues aboard",0,5,0)
 fare = st.slider("Fare Paid",0.0,500.0,50.0)
 
 sex_num = 0 if sex =="male" else 1
-imput_data = [[pclass,sex_num,age,sibsp,fare]]
+input_data = [[pclass,sex_num,age,sibsp,fare]]
 
 if st.button("Predict Survival"):
     prediction = model.predict(input_data)
